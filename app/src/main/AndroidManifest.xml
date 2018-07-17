@@ -27,7 +27,8 @@
         <activity android:name=".activities.PermissionsActivity" />
         <activity android:name=".activities.PicassoActivity" />
         <activity android:name=".activities.SharedPreferencesActivity" />
-        <activity android:name=".activities.LifeCycleEventsActivity"></activity>
+        <activity android:name=".activities.LifeCycleEventsActivity" />
+        <activity android:name=".activities.IntentExtrasActivity"></activity>
     </application>
 
 </manifest>

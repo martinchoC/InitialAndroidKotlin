@@ -21,4 +21,10 @@
     <string name="button_kat_id">Button by FindViewById</string>
     <string name="button_kat_kat">Button by KAT</string>
 
+    <string name="button_intent_extras">Intent with Extras</string>
+    <string name="button_intent_flags">Intent with Flags</string>
+    <string name="button_intent_object">Intent with Object</string>
+
+    <string name="button_back">Go Back</string>
+
 </resources>
