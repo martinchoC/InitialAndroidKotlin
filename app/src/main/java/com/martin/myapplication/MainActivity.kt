@@ -1,19 +1,25 @@
 package com.martin.myapplication
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
 import android.support.design.widget.Snackbar
+import android.support.v7.widget.Toolbar
 import android.widget.Button
 import android.widget.Toast
 import com.martin.myapplication.activities.*
+import com.martin.myapplication.others.ToolbarActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+
+class MainActivity : ToolbarActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        toolbarToLoad(toolbar as Toolbar)
+        enableHomeDisplay(true)
 
         val btnLifeCycle = findViewById<Button>(R.id.button_to_cycle)
         val btnClickEvents = findViewById<Button>(R.id.button_to_click)

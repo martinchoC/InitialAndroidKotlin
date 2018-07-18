@@ -2,13 +2,16 @@ package com.martin.myapplication.activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.Toolbar
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.martin.myapplication.R
+import com.martin.myapplication.others.ToolbarActivity
+import kotlinx.android.synthetic.main.activity_intent_extras.*
 
 
-class ClickEventsActivity : AppCompatActivity(), View.OnLongClickListener {
+class ClickEventsActivity : View.OnLongClickListener,ToolbarActivity() {
 
     // 1) Click en XML
     // 2) Click en linea
@@ -17,6 +20,9 @@ class ClickEventsActivity : AppCompatActivity(), View.OnLongClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_click_events)
+
+        toolbarToLoad(toolbar as Toolbar)
+        enableHomeDisplay(true)
 
         clickInLine()
 

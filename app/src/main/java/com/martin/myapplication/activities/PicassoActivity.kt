@@ -1,19 +1,23 @@
 package com.martin.myapplication.activities
 
-import android.content.Context
-import android.support.v7.app.AppCompatActivity
+
 import android.os.Bundle
+import android.support.v7.widget.Toolbar
 import com.martin.myapplication.R
+import com.martin.myapplication.others.ToolbarActivity
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_picasso.*
 import java.lang.Exception
 
-class PicassoActivity : AppCompatActivity() {
+class PicassoActivity : ToolbarActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_picasso)
+
+        toolbarToLoad(toolbar as Toolbar)
+        enableHomeDisplay(true)
 
         buttonLoader.setOnClickListener { loadImages() }
 

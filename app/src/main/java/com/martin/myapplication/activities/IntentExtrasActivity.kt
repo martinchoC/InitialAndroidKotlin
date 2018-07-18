@@ -1,18 +1,23 @@
 package com.martin.myapplication.activities
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.Toolbar
 import android.view.View
 import com.martin.myapplication.R
 import com.martin.myapplication.models.Student
+import com.martin.myapplication.others.ToolbarActivity
 import kotlinx.android.synthetic.main.activity_intent_extras.*
 
-class IntentExtrasActivity : AppCompatActivity() {
+class IntentExtrasActivity : ToolbarActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intent_extras)
+
+        toolbarToLoad(toolbar as Toolbar)
+        enableHomeDisplay(true)
 
         //Boton back que creé, no es el del action bar
         buttonBack.setOnClickListener{startActivity(Intent(this, IntentsActivity :: class.java))}

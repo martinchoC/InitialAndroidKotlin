@@ -1,4 +1,4 @@
-package com.martin.myapplication.activities
+package com.martin.myapplication.others
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

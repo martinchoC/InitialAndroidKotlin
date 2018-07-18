@@ -23,12 +23,25 @@
         <activity android:name=".activities.IntentsActivity" />
         <activity android:name=".activities.KotlinAndroidExtensionsActivity" />
         <activity android:name=".activities.LifeCycleActivity" />
-        <activity android:name=".activities.ListViewActivity" />
+        <activity android:name=".activities.ListViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".activities.PermissionsActivity" />
-        <activity android:name=".activities.PicassoActivity" />
+        <activity android:name=".activities.PicassoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".activities.SharedPreferencesActivity" />
-        <activity android:name=".activities.LifeCycleEventsActivity" />
-        <activity android:name=".activities.IntentExtrasActivity"></activity>
+        <activity android:name=".others.LifeCycleEventsActivity" />
+        <activity android:name=".activities.IntentExtrasActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".others.ToolbarActivity"></activity>
     </application>
 
 </manifest>
